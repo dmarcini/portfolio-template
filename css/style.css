@@ -1,0 +1,6 @@
+@import "./fonts.css";
+@import "./partials/_variables.css";
+
+body {
+    font-family: var(--montserrat);
+}
