@@ -2,5 +2,195 @@
 @import "./partials/_variables.css";
 
 body {
+    background: url("../static/images/background.png") no-repeat fixed 0 35%;
+    background-size: cover;
     font-family: var(--montserrat);
+    box-sizing: border-box;
+}
+
+#header, #nav {
+    background-color: var(--primary-light-color);
+    position: fixed;
+    left: 0;
+    width: 25%;
+    opacity: 85%;
+}
+
+#header {
+    top: 0;
+    height: 42%;
+}
+
+#nav {
+    top: 35%;
+    height: 55%;
+}
+
+#header img {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#name, #position {
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+#name {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#position {
+    font-size: 1.125em;
+    margin-top: 5px;
+}
+
+#nav {
+    position: absolute;
+    color: var(--primary-text-color);
+    margin-top: 50px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+#nav ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li:nth-last-child(2) {
+    margin-top: 30px;
+}
+
+#nav #nav-items li a, #nav #social-media li a {
+    color: var(--secondary-text-color);
+    font-size: 1.0em;
+    text-decoration: none;
+}
+
+#nav #nav-items li a {
+    display: block;
+    margin-left: 50px;
+    padding-bottom: 5px;
+}
+
+#nav #nav-items li a:hover, #nav #social-media li a:hover {
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+#nav li span {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#nav li span::after {
+    content: "\00bb";
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    font-size: 1.25em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#nav li a:hover span {
+    padding-right: 18px;
+}
+  
+#nav li a:hover span:after {
+    right: 0;
+    opacity: 1;
+}
+
+#nav ul:nth-child(2) {
+    margin: 80px 0 0 50px;
+}
+
+#nav div {
+    color: var(--primary-text-color);
+    font-size: 0.75em;
+    margin: 60px 0 -16px 50px;
+}
+
+#nav #social-media {
+    margin-left: 42px;
+}
+
+#nav #social-media li {
+    display: inline-block;
+}
+
+#nav #social-media li a {
+    margin-left: 8px;
+}
+
+#social-media i {
+    color: var(--secondary-text-color);
+    padding-right: 15px;
+}
+
+#social-media i:hover {
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+#footer {
+    background-color: var(--primary-dark-color);
+    color: var(--primary-text-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.8em;
+    width: 25%;
+    height: 40px;
+    padding: 12px;
+}
+
+#main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    color: var(--primary-text-color);
+    margin: 5% 0 0 30%;
+}
+
+#main section h1 {
+    font-size: 3.375em;
+}
+
+#main section div:nth-child(2) {
+    font-size: 2.25em;
+}
+
+#main section div:nth-child(3) {
+    font-size: 1.875em;
+    margin: 16px 0 70px 0;
+}
+
+#main section button {
+    display: block;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    font-size: 1.25em;
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+}
+
+#main section button:hover {
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #ffffff;
+    cursor: pointer;
 }

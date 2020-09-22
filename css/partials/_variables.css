@@ -6,6 +6,9 @@
     --secondary-dark-color: #db8938;
     --complementary-color: #56bfa9;
 
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #cccccc;
+
     /* fonts */
     --montserrat: "Montserrat"; 
 }
