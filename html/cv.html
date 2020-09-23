@@ -13,6 +13,7 @@
 
         <!----------------- own stylesheets -------------------->
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/cv-style.css">
 
         <!-------------- fontawesome stylesheet ---------------->
         <link rel="stylesheet" href="../css/fontawesome/all.min.css">
@@ -23,12 +24,12 @@
 
     <body>
         <header id="header">
-            <a href="./index.html">
+            <a href="../index.html">
                 <img class="rounded-circle d-block mx-auto" 
                      src="../static/images/my-foto.png"
                      alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
+                <div id="name" class="text-center text-uppercase">Damian Marciniak</div>
+                <div id="position" class="text-center text-uppercase">Junior Software Developer</div>
             </a>
         </header>
 
@@ -41,7 +42,7 @@
                 <li class="nav-item"><a class="nav-link" href=""><span>About me</span></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><span>Portfolio</span></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/cv.html"><span>My CV</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href=""><span>My CV</span></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><span>Contact me</span></a></li>
             </ul>
             <div id="social-media-label">Find me on social media</div>
@@ -55,16 +56,10 @@
         </nav>
 
         <main id="main">
-            <section>
-                <h1>Hello, I'm [Your Name],</h1>
-                <div>
-                    junior software developer<br>specialized in
-                    <strong>Java</strong> and <strong>C++.</strong>
-                </div>
-                <div>Welcome on my site!</div>
-                <button class="text-uppercase">Click here to find out more about me.</button>
-                <button class="text-uppercase">Click here to view my portfolio.</button>
-            </section>
+            <iframe id="cv-view"
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                    src="../static/documents/example-cv.pdf?transparent=0">
+            </iframe>
         </main>
 
         <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>

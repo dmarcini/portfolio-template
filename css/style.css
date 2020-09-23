@@ -28,6 +28,10 @@ body {
     margin-top: 30px;
 }
 
+#header a {
+    text-decoration: none;
+}
+
 #name, #position {
     color: var(--primary-text-color);
 }
@@ -106,11 +110,16 @@ body {
     transition: 0.5s;
 }
 
-#nav li a:hover span {
+#nav #nav-items li.active a {
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+#nav li a:hover span, #nav #nav-items li.active span {
     padding-right: 18px;
 }
   
-#nav li a:hover span:after {
+#nav li a:hover span:after, #nav #nav-items li.active span:after {
     right: 0;
     opacity: 1;
 }
