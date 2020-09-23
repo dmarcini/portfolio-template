@@ -23,29 +23,32 @@
 
     <body>
         <header id="header">
-            <section>
-                <img src="../static/images/my-foto.png"
-                     alt="My photo" width="150" height="150">
-                <div id="name" class="text-center">Damian Marciniak</div>
-                <div id="position" class="text-center">Junior Software Developer</div>
-            </section>
+            <img class="rounded-circle d-block mx-auto" 
+                 src="../static/images/my-foto.png"
+                 alt="My photo">
+            <div id="name" class="text-center text-uppercase">Damian Marciniak</div>
+            <div id="position" class="text-center text-uppercase">Junior Software Developer</div>
         </header>
 
-        <nav id="nav">
-            <ul id="nav-items">
-                <li><a href=""><span>About me</span></a></li>
-                <li><a href=""><span>Portfolio</span></a></li>
-                <li><a href=""><span>My skills</span></a></li>
-                <li><a href=""><span>My CV</span></a></li>
-                <li><a href=""><span>Contact me</span></a></li>
+        <nav id="nav" class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#nav-items" aria-expanded="false">
+                <span id="btn-collapse" class="fas fa-bars"></span>
+            </button>
+            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+                <li class="nav-item"><a class="nav-link" href=""><span>About me</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span>Portfolio</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span>My skills</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span>My CV</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span>Contact me</span></a></li>
             </ul>
-            <div>Find me on social media</div>
-            <ul id="social-media">
-                <li><a href=""><i class="fas fa-envelope fa-lg"></i></a></li>
-                <li><a href=""><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-                <li><a href=""><i class="fab fa-github fa-lg"></i></a></li>
+            <div id="social-media-label">Find me on social media</div>
+            <ul id="social-media" class="nav">
+                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
             </ul>
         </nav>
 
@@ -57,8 +60,8 @@
                     <strong>Java</strong> and <strong>C++.</strong>
                 </div>
                 <div>Welcome on my site!</div>
-                <button>Click here to find out more about me.</button>
-                <button>Click here to view my portfolio.</button>
+                <button class="text-uppercase">Click here to find out more about me.</button>
+                <button class="text-uppercase">Click here to view my portfolio.</button>
             </section>
         </main>
 
