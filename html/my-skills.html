@@ -11,15 +11,15 @@
 
         <title>Portfolio Template</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="../css/main-style.css">
-        <link rel="stylesheet" href="../css/my-skills-style.css">
-
         <!-------------- fontawesome stylesheet ---------------->
         <link rel="stylesheet" href="../css/fontawesome/all.min.css">
 
         <!--------------- bootstrap stylesheet ----------------->
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+        <!----------------- own stylesheets -------------------->
+        <link rel="stylesheet" href="../css/main-style.css">
+        <link rel="stylesheet" href="../css/my-skills-style.css">
     </head>
 
     <body>
@@ -56,18 +56,118 @@
         </nav>
 
         <main id="main">
-            
+            <header id="skill-header">
+                <span class="fab fa-accusoft"></span>
+                <h1>My skills</h1>
+            </header>
+            <section>
+                <ul id="skills-list" class="container-fluid">
+                    <li>
+                        <div class="skill-container" data-skill-level="2">
+                             Skill-1
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="4">
+                            Skill-2
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="3">
+                            Skill-3
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="5">
+                            Skill-4
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="3">
+                            Skill-5
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="0">
+                            Skill-6
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="4">
+                            Skill-7
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="2">
+                            Skill-8
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="2">
+                            Skill-9
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="1">
+                            Skill-10
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="3">
+                            Skill-11
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-container" data-skill-level="3">
+                            Skill-12
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main>
 
         <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
 
-        <!------------------- own scripts --------------------->
-        <script src="../js/main.js"></script>
+        <!---------------- template containers  --------------->
+
+        <div id="skill-circle-container-template"
+             class="skill-circle-container" hidden>
+            <div class="skill-circle" aria-hidden="true"></div>
+            <div class="skill-circle" aria-hidden="true"></div>
+            <div class="skill-circle" aria-hidden="true"></div>
+            <div class="skill-circle" aria-hidden="true"></div>
+            <div class="skill-circle" aria-hidden="true"></div>
+            <div id="skill-level-description">Description</div>
+        </div>
+
+        <div id="skill-level-description-container" hidden>
+            <ul aria-hidden="true">
+                <li>skill-level-description-0</li>
+                <li>skill-level-description-1</li>
+                <li>skill-level-description-2</li>
+                <li>skill-level-description-3</li>
+                <li>skill-level-description-4</li>
+                <li>skill-level-description-5</li>
+            </ul>
+        </div>
+
+        <div id="skill-container-template" class="row no-gutters" hidden>
+            <div class="col-sm-12 col-md-6 col-lg-5">
+                <span class="item-circle"></span>
+                <h2>#</h2>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-7 ">
+                <div class="skill-circle-container" data-skill-level="#"></div>
+            </div>
+        </div>
 
         <!------------------- jquery script ------------------->
         <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
 
         <!----------------- bootstrap script ------------------>
         <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+        <!------------------- own scripts --------------------->
+        <script src="../js/my-skills.js"></script>
     </body>
 </html>
