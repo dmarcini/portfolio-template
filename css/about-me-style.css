@@ -2,4 +2,110 @@
     background: #ffffff;
     opacity: 1.0;
     height: 100%;
+    margin: 0;
+    padding: 0 50px 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#main h1, #main h2 {
+    display: inline-block;
+    text-transform: uppercase; 
+}
+
+#main h1, #main h2, #main .icon, #about-me {
+    color: var(--primary-dark-color);
+}
+
+#main h1 {
+    margin: 50px 0 25px 20px;
+    font-size: 2em;
+}
+
+#about-me-icon {
+    color: var(--primary-dark-color);
+    font-size: 2em;
+    margin-left: 60px;
+}
+
+#about-me {
+    margin-left: 60px;
+}
+
+#main section {
+    margin: 0 0 0 50px;
+}
+
+#main .icon {
+    font-size: 1.25em;
+    margin-left: 10px;
+}
+
+#main h2 {
+    font-size: 1.25em;
+    padding: 10px;
+    margin: 0;
+}
+
+#whoami p {
+    color: var(--primary-light-color);
+    border-left: 1px solid var(--primary-dark-color);
+    font-size: 1em;
+    padding: 10px 10px 10px 30px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+#my-education ul, #my-experience ul, #my-interests ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 22px;
+    padding-top: 20px;
+    border-left: 1px solid var(--primary-dark-color);
+}
+
+#my-education ul li, #my-experience ul li, #my-interests ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.item-circle {
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--primary-dark-color);
+    border-radius: 50%;
+}
+
+.period, .position, .description, .interest {
+    color: var(--primary-light-color);
+}
+
+.period {
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: bold;
+    width: 180px;
+}
+
+.position {
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+#my-interests li {
+    padding: 0 10px 10px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .position {
+        margin-top: 10px;
+    }
 }
