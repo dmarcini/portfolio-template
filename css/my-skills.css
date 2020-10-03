@@ -1,12 +1,14 @@
-@import "../css/partials/_variables.css";
-
 #main {
-    background: rgb(255, 255, 255, 0.85);
+    background: #ffffff;
     height: 100%;
     margin: 0;
     padding: 50px 0 50px 80px;
     color: var(--primary-dark-color);
     overflow: scroll;
+}
+
+h2 {
+    color: var(--primary-light-color);
 }
 
 .skill-circle-container {
@@ -25,7 +27,9 @@
 }
 
 #skill-level-description {
+    color: var(--primary-light-color);
     font-size: 0.875em;
+    text-transform: uppercase;
 }
 
 .light-skill-circle {
@@ -38,6 +42,8 @@
 
 #skill-header {
     position: relative;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 #skill-header span {
@@ -64,7 +70,7 @@
 }
 
 #skills-list li:first-child {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #skills-list li:last-child {
