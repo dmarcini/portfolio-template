@@ -26,7 +26,7 @@
         <header id="header">
             <a href="../index.html">
                 <img class="rounded-circle d-block mx-auto" 
-                     src="../static/images/my-foto.png"
+                     src="../assets/images/my-foto.png"
                      alt="My photo">
                 <div id="name" class="text-center text-uppercase">Your Name</div>
                 <div id="position" class="text-center text-uppercase">Your Position</div>
@@ -56,16 +56,98 @@
         </nav>
 
         <main id="main">
-            
+            <span id="portfolio-icon" class="fas fa-book"></span>
+            <h1>Portfolio</h1>
+            <ul id="projects-list">
+                <li
+                    data-project-title="Project 1"
+                    data-technologies="HTML5 CSS3 Bootstrap~4 JQuery"
+                    data-project-url="https://github.com"
+                    data-project-images-url="../assets/images"
+                    data-project-images="image1:img1.png image2:img2.png image3:img1.png">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                </li>
+                <li
+                    data-project-title="Project 2"
+                    data-technologies="Java Spring React"
+                    data-project-url="https://github.com"
+                    data-project-images-url="../assets/images"
+                    data-project-images="image2:img2.png">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                </li>
+                <li
+                    data-project-title="Project 3"
+                    data-technologies="C++ CMake Linux"
+                    data-project-url="https://github.com"
+                    data-project-images-url="../assets/images"
+                    data-project-images="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </ul>
         </main>
 
-        <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
+        <footer id="footer" class="text-center">
+            &copy; 2020 Damian Marciniak
+        </footer>
+
+        <!--------------- template containers ----------------->
+
+        <section id="project-container-template"
+                 class="project-container" hidden>
+            <span class="item-circle"></span>
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <h2 class="project-title"></h2>
+                    <div class="project-description"></div>
+                    <div class="technology-container"></div>
+                    <a class="project-url" href="" target="_blank">
+                        Link to project
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="slideshow-container">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="slideshow-container-template" class="slide" hidden>
+            <div class="image-number"></div>
+            <img src="#">
+            <div class="title"></div>
+        </div>
 
         <!------------------- jquery script ------------------->
         <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
 
         <!----------------- bootstrap script ------------------>
         <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+        <!------------------- own scripts --------------------->
+        <script src="../js/portfolio.js"></script>
     </body>
 </html>
 

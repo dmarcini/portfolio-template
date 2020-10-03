@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: "../static/fonts/Montserrat/Montserrat-Regular.ttf";
+    src: "../assets/fonts/Montserrat/Montserrat-Regular.ttf";
 }
 
 body {
-    background: url("../static/images/background.png") no-repeat fixed 0 35%;
+    background: url("../assets/images/background.png") no-repeat fixed 0 35%;
     background-size: cover;
     font-family: var(--montserrat);
     box-sizing: border-box;

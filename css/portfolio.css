@@ -2,4 +2,161 @@
     background: #ffffff;
     opacity: 1.0;
     height: 100%;
+    margin: 0;
+    padding: 50px 0 50px 60px;
+    overflow: scroll;
+}
+
+#portfolio-icon, #main h1 {
+    color: var(--primary-dark-color);
+    font-size: 2em;
+}
+
+#main h1 {
+    display: inline-block;
+    padding: 0 0 20px 30px;
+    text-transform: uppercase;
+}
+
+#projects-list {
+    list-style-type: none;
+    border-left: 1px solid var(--primary-dark-color);
+    margin-left: 15px;
+}
+
+.item-circle {
+    background-color: var(--primary-dark-color);
+    position: absolute;
+    left: -45px;
+    top: 15px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+#projects-list li {
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 70px;
+}
+
+.project-container {
+    position: relative;
+}
+
+.project-title, .project-description, .technology-container span {
+    color: var(--primary-dark-color);
+}
+
+.project-title {
+    font-size: 1.5em;
+}
+
+.project-description {
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.technology-container {
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.technology-container span {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.875em;
+    text-align: center;
+    padding: 4px 0 4px 0;
+    margin: auto;
+}
+
+.technology-container span:nth-child(even) {
+    background-color: var(--primary-light-color);
+}
+
+.technology-container span:nth-child(odd) {
+    background-color: var(--primary-dark-color);
+}
+
+.project-url {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: var(--primary-light-color);
+    margin-top: 20px;
+}
+
+.project-url:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-dark-color);
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    color: var(--primary-dark-color);
+    cursor: pointer;
+    width: auto;
+    border-radius: 0 3px 3px 0;
+    margin-top: -1em;
+    padding: 0 6px 0 6px;
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover, .prev:hover {
+    background-color: var(--primary-light-color);
+    opacity: 0.3;
+}
+
+.image-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.slide img {
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -100px;
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow-container {
+        margin: 30px 0 0 0;
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width: 992px) {
+    #main {
+        overflow: hidden;
+    }
 }
