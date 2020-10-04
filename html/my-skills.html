@@ -1,173 +1,177 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, template, personal usage">
-        <meta name="description" content="This is a portfolio template for personal usage.
-                                          Change specific information about yourself
-                                          and boast about them in work!">
-        <meta name="author" content="Damian Marciniak">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, template, personal usage">
+    <meta name="description" content="This is a portfolio template
+                                      for personal usage.
+                                      Change specific information about yourself
+                                      and boast about them in work!">
+    <meta name="author" content="Damian Marciniak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Template - My Skills</title>
+    <title>Portfolio Template - My Skills</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/my-skills.css">
+    <!---------------- custom stylesheets ------------------>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/my-skills.css">
+    <!-------------- fontawesome stylesheet ---------------->
+    <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+    <!--------------- bootstrap stylesheet ----------------->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  </head>
 
-        <!-------------- fontawesome stylesheet ---------------->
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+  <body>
+    <header id="header">
+      <a href="../index.html">
+        <!-- Set your img src. -->
+        <img class="rounded-circle d-block mx-auto" 
+             src="" alt="My photo">
+        <div id="name">Your Name</div>
+        <div id="position">Your Position</div>
+      </a>
+    </header>
 
-        <!--------------- bootstrap stylesheet ----------------->
-        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    </head>
-
-    <body>
-        <header id="header">
-            <a href="../index.html">
-                <img class="rounded-circle d-block mx-auto" 
-                     src="../assets/images/my-foto.png"
-                     alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-items"
+              aria-expanded="false">
+        <span id="btn-collapse" class="fas fa-bars"></span>
+      </button>
+      <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about-me.html">
+              <span>About me</span>
             </a>
-        </header>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/portfolio.html">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span>My skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/cv.html">
+              <span>My CV</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/contact-me.html">
+              <span>Contact me</span>
+            </a>
+          </li>
+      </ul>
+      <div id="social-media-label">Find me on social media</div>
+      <ul id="social-media" class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fas fa-envelope fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-twitter fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-github fa-lg"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-        <nav id="nav" class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-items" aria-expanded="false">
-                <span id="btn-collapse" class="fas fa-bars"></span>
-            </button>
-            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
-                <li class="nav-item"><a class="nav-link" href="../html/about-me.html"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/portfolio.html"><span>Portfolio</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/cv.html"><span>My CV</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/contact-me.html"><span>Contact me</span></a></li>
-            </ul>
-            <div id="social-media-label">Find me on social media</div>
-            <ul id="social-media" class="nav">
-                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
-            </ul>
-        </nav>
-
-        <main id="main">
-            <header id="skill-header">
-                <span class="fab fa-accusoft"></span>
-                <h1>My skills</h1>
-            </header>
-            <section>
-                <ul id="skills-list" class="container-fluid">
-                    <li>
-                        <div class="skill-container" data-skill-level="2">
-                             Skill-1
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="4">
-                            Skill-2
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="3">
-                            Skill-3
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="5">
-                            Skill-4
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="3">
-                            Skill-5
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="0">
-                            Skill-6
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="4">
-                            Skill-7
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="2">
-                            Skill-8
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="2">
-                            Skill-9
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="1">
-                            Skill-10
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="3">
-                            Skill-11
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-container" data-skill-level="3">
-                            Skill-12
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-
-        <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
-
-        <!---------------- template containers  --------------->
-
-        <div id="skill-circle-container-template"
-             class="skill-circle-container" hidden>
-            <div class="skill-circle" aria-hidden="true"></div>
-            <div class="skill-circle" aria-hidden="true"></div>
-            <div class="skill-circle" aria-hidden="true"></div>
-            <div class="skill-circle" aria-hidden="true"></div>
-            <div class="skill-circle" aria-hidden="true"></div>
-            <div id="skill-level-description">Description</div>
-        </div>
-
-        <div id="skill-level-description-container" hidden>
-            <ul aria-hidden="true">
-                <li>skill-level-description-0</li>
-                <li>skill-level-description-1</li>
-                <li>skill-level-description-2</li>
-                <li>skill-level-description-3</li>
-                <li>skill-level-description-4</li>
-                <li>skill-level-description-5</li>
-            </ul>
-        </div>
-
-        <div id="skill-container-template" class="row no-gutters" hidden>
-            <div class="col-sm-12 col-md-6 col-lg-5">
-                <span class="item-circle"></span>
-                <h2>#</h2>
+    <main id="main">
+      <span id="my-skills-icon" class="fab fa-accusoft"></span>
+      <h1>My skills</h1>
+      <section>
+        <!-- Set appropriate skill level by data-skill-level attribute. -->
+        <ul id="skills-list" class="container-fluid">
+          <li>
+            <div class="skill-container" data-skill-level="2">
+              Skill-1
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-7 ">
-                <div class="skill-circle-container" data-skill-level="#"></div>
+          </li>
+          <li>
+            <div class="skill-container" data-skill-level="4">
+              Skill-2
             </div>
-        </div>
+          </li>
+          <li>
+            <div class="skill-container" data-skill-level="3">
+              Skill-3
+            </div>
+          </li>
+          <li>
+            <div class="skill-container" data-skill-level="5">
+              Skill-4
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <!------------------- jquery script ------------------->
-        <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <footer id="footer">
+      &copy; 2020 Damian Marciniak
+    </footer>
 
-        <!----------------- bootstrap script ------------------>
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!---------------- template containers  --------------->
 
-        <!------------------- own scripts --------------------->
-        <script src="../js/my-skills.js"></script>
-    </body>
+    <!-- Edit this container if you want more than 5 skill level. -->
+    <div id="skill-circle-container-template"
+         class="skill-circle-container" hidden>
+      <div class="skill-circle" aria-hidden="true"></div>
+      <div class="skill-circle" aria-hidden="true"></div>
+      <div class="skill-circle" aria-hidden="true"></div>
+      <div class="skill-circle" aria-hidden="true"></div>
+      <div class="skill-circle" aria-hidden="true"></div>
+      <div id="skill-level-description">Description</div>
+    </div>
+
+    <!--
+      Edit this container to change skill level
+      description for specific skill level.
+    -->
+    <div id="skill-level-description-container" hidden>
+      <ul aria-hidden="true">
+        <li>skill-level-description-0</li>
+        <li>skill-level-description-1</li>
+        <li>skill-level-description-2</li>
+        <li>skill-level-description-3</li>
+        <li>skill-level-description-4</li>
+        <li>skill-level-description-5</li>
+      </ul>
+    </div>
+
+    <div id="skill-container-template" class="row no-gutters" hidden>
+      <div class="col-sm-12 col-md-6 col-lg-5">
+        <span class="item-circle"></span>
+        <h2></h2>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-7 ">
+        <div class="skill-circle-container" data-skill-level="#"></div>
+      </div>
+    </div>
+
+    <!------------------- jquery script ------------------->
+    <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!----------------- bootstrap script ------------------>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!------------------ custom scripts ------------------->
+    <script src="../js/my-skills.js"></script>
+  </body>
 </html>

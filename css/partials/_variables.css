@@ -1,14 +1,10 @@
 :root {
-    /* colors */
-    --primary-light-color: #0f5b71;
-    --primary-dark-color: #123b4c;
-    --secondary-light-color: #f1edc4;
-    --secondary-dark-color: #db8938;
-    --complementary-color: #56bfa9;
+  /* colors */
+  --primary-light-color: #0f5b71;
+  --primary-dark-color: #123b4c;
 
-    --primary-text-color: #ffffff;
-    --secondary-text-color: #cccccc;
+  --secondary-color: #ffffff;
 
-    /* fonts */
-    --montserrat: "Montserrat"; 
+  /* fonts */
+  --montserrat: "Montserrat"; 
 }

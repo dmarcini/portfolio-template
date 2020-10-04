@@ -1,20 +1,20 @@
 #main {
-    background: #ffffff;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  background: var(--secondary-color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #cv-view {
-    margin: 0 auto;
-    width: 100%;
-    height: 70vw;
-    border: none;
+  width: 100%;
+  height: 70vw;
+  margin: 0 auto;
+  border: none;
 }
 
 @media only screen and (min-width: 992px) {
-    #cv-view {
-        height: 100%;
-    }
+  #cv-view {
+    height: 100%;
+  }
 }

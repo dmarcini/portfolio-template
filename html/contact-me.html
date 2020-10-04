@@ -1,100 +1,141 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, template, personal usage">
-        <meta name="description" content="This is a portfolio template for personal usage.
-                                          Change specific information about yourself
-                                          and boast about them in work!">
-        <meta name="author" content="Damian Marciniak">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, template, personal usage">
+    <meta name="description" content="This is a portfolio template
+                                      for personal usage.
+                                      Change specific information about yourself
+                                      and boast about them in work!">
+    <meta name="author" content="Damian Marciniak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Template - Contact Me</title>
+    <title>Portfolio Template - Contact Me</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/contact-me.css">
+    <!---------------- custom stylesheets ------------------>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact-me.css">
+    <!-------------- fontawesome stylesheet ---------------->
+    <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+    <!--------------- bootstrap stylesheet ----------------->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  </head>
 
-        <!-------------- fontawesome stylesheet ---------------->
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+  <body>
+    <header id="header">
+      <a href="../index.html">
+        <!-- Set your img src. -->
+        <img class="rounded-circle d-block mx-auto" 
+             src="" alt="My photo">
+        <div id="name">Your Name</div>
+        <div id="position">Your Position</div>
+      </a>
+    </header>
 
-        <!--------------- bootstrap stylesheet ----------------->
-        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    </head>
-
-    <body>
-        <header id="header">
-            <a href="../index.html">
-                <img class="rounded-circle d-block mx-auto" 
-                     src="../assets/images/my-foto.png"
-                     alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-items"
+              aria-expanded="false">
+        <span id="btn-collapse" class="fas fa-bars"></span>
+      </button>
+      <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about-me.html">
+              <span>About me</span>
             </a>
-        </header>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/portfolio.html">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/my-skills.html">
+              <span>My skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/cv.html">
+              <span>My CV</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span>Contact me</span>
+            </a>
+          </li>
+      </ul>
+      <div id="social-media-label">Find me on social media</div>
+      <ul id="social-media" class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fas fa-envelope fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-twitter fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-github fa-lg"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-        <nav id="nav" class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-items" aria-expanded="false">
-                <span id="btn-collapse" class="fas fa-bars"></span>
-            </button>
-            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
-                <li class="nav-item"><a class="nav-link" href="../html/about-me.html"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/portfolio.html"><span>Portfolio</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/my-skills.html"><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/cv.html"><span>My CV</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><span>Contact me</span></a></li>
-            </ul>
-            <div id="social-media-label">Find me on social media</div>
-            <ul id="social-media" class="nav">
-                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
-            </ul>
-        </nav>
+    <main id="main">
+      <section>
+        <span id="contact-icon" class="far fa-address-book"></span>
+        <h1 class="text-uppercase">Contact me</h1>
+        <dl id="contact-type-list">
+          <dt>
+            <div class="item-circle"></div>
+            <span class="fas fa-envelope fa-lg"></span>
+          </dt>
+          <dd><a href="#">your-email@wp.pl</a></dd>
+          <dt>
+            <div class="item-circle"></div>
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </dt>
+          <dd><a href="#">www.facebook/your-profile.com</a></dd>
+          <dt>
+            <div class="item-circle"></div>
+            <span class="fab fa-twitter fa-lg"></span>
+          </dt>
+          <dd><a href="#">www.twitter/your-profile.com</a></dd>
+          <dt>
+            <div class="item-circle"></div>
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </dt>
+          <dd><a href="#">www.linkedin/your-profile.com</a></dd>
+          <dt>
+            <div class="item-circle"></div>
+            <span class="fab fa-github fa-lg"></span>
+          </dt>
+          <dd><a href="#">www.github/your-profile.com</a></dd>
+        </dl>
+      </section>
+    </main>
 
-        <main id="main">
-            <section>
-                <span id="contact-icon" class="far fa-address-book"></span>
-                <h1 class="text-uppercase">Contact me</h1>
-                <dl id="contact-type-list">
-                    <dt>
-                        <div class="item-circle"></div>
-                        <span class="fas fa-envelope fa-lg"></span>
-                    </dt>
-                    <dd><a href="#">your-email@wp.pl</a></dd>
-                    <dt>
-                        <div class="item-circle"></div>
-                        <span class="fab fa-facebook-f fa-lg"></span>
-                    </dt>
-                    <dd><a href="#">www.facebook/your-profile.com</a></dd>
-                    <dt>
-                        <div class="item-circle"></div>
-                        <span class="fab fa-twitter fa-lg"></span>
-                    </dt>
-                    <dd><a href="#">www.twitter/your-profile.com</a></dd>
-                    <dt>
-                        <div class="item-circle"></div>
-                        <span class="fab fa-linkedin-in fa-lg"></span>
-                    </dt>
-                    <dd><a href="#">www.linkedin/your-profile.com</a></dd>
-                    <dt>
-                        <div class="item-circle"></div>
-                        <span class="fab fa-github fa-lg"></span>
-                    </dt>
-                    <dd><a href="#">www.github/your-profile.com</a></dd>
-                </dl>
-            </section>
-        </main>
+    <footer id="footer">
+      &copy; 2020 Damian Marciniak
+    </footer>
 
-        <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
-
-        <!------------------- jquery script ------------------->
-        <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
-
-        <!----------------- bootstrap script ------------------>
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
-    </body>
+    <!------------------- jquery script ------------------->
+    <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!----------------- bootstrap script ------------------>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>

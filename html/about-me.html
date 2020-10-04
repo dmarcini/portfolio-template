@@ -1,146 +1,222 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, template, personal usage">
-        <meta name="description" content="This is a portfolio template for personal usage.
-                                          Change specific information about yourself
-                                          and boast about them in work!">
-        <meta name="author" content="Damian Marciniak">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, template, personal usage">
+    <meta name="description" content="This is a portfolio template
+                                      for personal usage.
+                                      Change specific information about yourself
+                                      and boast about them in work!">
+    <meta name="author" content="Damian Marciniak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Template - About Me</title>
+    <title>Portfolio Template - About Me</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/about-me.css">
+    <!--------------- custom stylesheets ------------------->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/about-me.css">
+    <!-------------- fontawesome stylesheet ---------------->
+    <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+    <!--------------- bootstrap stylesheet ----------------->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  </head>
 
-        <!-------------- fontawesome stylesheet ---------------->
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+  <body>
+    <header id="header">
+      <a href="../index.html">
+        <!-- Set your img src. -->
+        <img class="rounded-circle d-block mx-auto" 
+             src="" alt="My photo">
+        <div id="name">Your Name</div>
+        <div id="position">Your Position</div>
+      </a>
+    </header>
 
-        <!--------------- bootstrap stylesheet ----------------->
-        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    </head>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-items"
+              aria-expanded="false">
+        <span id="btn-collapse" class="fas fa-bars"></span>
+      </button>
+      <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <span>About me</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/portfolio.html">
+            <span>Portfolio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/my-skills.html">
+            <span>My skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/cv.html">
+            <span>My CV</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/contact-me.html">
+            <span>Contact me</span>
+          </a>
+        </li>
+      </ul>
+      <div id="social-media-label">Find me on social media</div>
+      <ul id="social-media" class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fas fa-envelope fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-twitter fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-github fa-lg"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-    <body>
-        <header id="header">
-            <a href="../index.html">
-                <img class="rounded-circle d-block mx-auto" 
-                     src="../assets/images/my-foto.png"
-                     alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
-            </a>
-        </header>
+    <main id="main">
+      <span id="about-me-icon" class="fa fa-user"></span>
+      <h1>About me</h1>
+      <p id="about-me">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt 
+        in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <section id="my-education">
+        <span class="fas fa-graduation-cap icon"></span>
+        <h2>My education</h2>
+        <!--
+          * Set your period of education as data-period attribute.
+          * Set your academic degree as data-position attribute.
+          * Set your study history or other elements inside
+            div.education element.
+        -->
+        <ul>
+          <li>
+            <div class="education"
+                 data-period="02.2018 - now"
+                 data-position="Position 1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </li>
+          <li>
+            <div class="education"
+                 data-period="07.2015 - 02.2018"
+                 data-position="Position 2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="my-experience">
+        <span class="fas fa-briefcase icon"></span>
+        <h2>My experience</h2>
+        <!--
+          * Set your period of work as data-period attribute.
+          * Set your position as data-position attribute.
+          * Set your working history or other elements inside
+            div.experience element.
+        -->
+        <ul>
+          <li>
+            <div class="experience"
+                 data-period="02.2018 - now"
+                 data-position="Position 1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </li>
+          <li>
+            <div class="experience"
+                 data-period="07.2015 - 02.2018"
+                 data-position="Position 2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="my-interests">
+        <span class="fas fa-laptop icon"></span>
+        <h2>My interests</h2>
+        <ul>
+          <li>
+            <span class="item-circle"></span>
+            <span class="interest">Interest1</span>
+          </li>
+          <li>
+            <span class="item-circle"></span>
+            <span class="interest">Interest2</span>
+          </li>
+          <li>
+            <span class="item-circle"></span>
+            <span class="interest">Interest3</span>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <nav id="nav" class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-items" aria-expanded="false">
-                <span id="btn-collapse" class="fas fa-bars"></span>
-            </button>
-            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
-                <li class="nav-item active"><a class="nav-link" href="#"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/portfolio.html"><span>Portfolio</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/my-skills.html"><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/cv.html"><span>My CV</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/contact-me.html"><span>Contact me</span></a></li>
-            </ul>
-            <div id="social-media-label">Find me on social media</div>
-            <ul id="social-media" class="nav">
-                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
-            </ul>
-        </nav>
+    <footer id="footer">
+      &copy; 2020 Damian Marciniak
+    </footer>
 
-        <main id="main">
-            <span id="about-me-icon" class="fa fa-user"></span>
-            <h1>About me</h1>
-            <p id="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate 
-               velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, sunt 
-               in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <section id="my-education">
-                <span class="fas fa-graduation-cap icon"></span>
-                <h2>My education</h2>
-                <ul>
-                    <li class="container-fluid">
-                        <div class="item-circle"></div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-5 period">02.2018 - now</div>
-                            <span class="col-sm-12 col-md-7 position">Position 1</span>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </li>
-                    <li class="container-fluid">
-                        <span class="item-circle"></span>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-5 period">07.2015 - 02.2018</div>
-                            <span class="col-sm-12 col-md-7 position">Position 2</span>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="my-experience">
-                <span class="fas fa-briefcase icon"></span>
-                <h2>My experience</h2>
-                <ul>
-                    <li class="container-fluid">
-                        <div class="item-circle"></div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-5 period">02.2018 - now</div>
-                            <span class="col-sm-12 col-md-7 position">Position 1</span>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </li>
-                    <li class="container-fluid">
-                        <span class="item-circle"></span>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-5 period">07.2015 - 02.2018</div>
-                            <span class="col-sm-12 col-md-7 position">Position 2</span>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="my-interests">
-                <span class="fas fa-laptop icon"></span>
-                <h2>My interests</h2>
-                <ul>
-                    <li>
-                        <span class="item-circle"></span>
-                        <span class="interest">Interest1</span>
-                    </li>
-                    <li>
-                        <span class="item-circle"></span>
-                        <span class="interest">Interest2</span>
-                    </li>
-                    <li>
-                        <span class="item-circle"></span>
-                        <span class="interest">Interest3</span>
-                    </li>
-                </ul>
-            </section>
-        </main>
+    <!---------------- template containers  --------------->
 
-        <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
+    <div id="education-container" hidden>
+      <div class="item-circle"></div>
+      <div class="row">
+        <div class="col-sm-12 col-md-5 period"></div>
+        <span class="col-sm-12 col-md-7 position"></span>
+      </div>
+        <p class="description"></p>
+    </div>
 
-        <!------------------- jquery script ------------------->
-        <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
-
-        <!----------------- bootstrap script ------------------>
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
-    </body>
+    <div id="experience-container" hidden>
+      <div class="item-circle"></div>
+      <div class="row">
+        <div class="col-sm-12 col-md-5 period"></div>
+        <span class="col-sm-12 col-md-7 position"></span>
+      </div>
+        <p class="description"></p>
+    </div>
+    
+    <!------------------- jquery script ------------------->
+    <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!----------------- bootstrap script ------------------>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!------------------ custom script -------------------->
+    <script src="../js/about-me.js"></script>
+  </body>
 </html>

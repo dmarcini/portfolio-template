@@ -1,153 +1,197 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, template, personal usage">
-        <meta name="description" content="This is a portfolio template for personal usage.
-                                          Change specific information about yourself
-                                          and boast about them in work!">
-        <meta name="author" content="Damian Marciniak">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, template, personal usage">
+    <meta name="description" content="This is a portfolio template
+                                      for personal usage.
+                                      Change specific information about yourself
+                                      and boast about them in work!">
+    <meta name="author" content="Damian Marciniak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Template - Portfolio</title>
+    <title>Portfolio Template - Portfolio</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/portfolio.css">
+    <!---------------- custom stylesheets ------------------>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <!-------------- fontawesome stylesheet ---------------->
+    <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+    <!--------------- bootstrap stylesheet ----------------->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  </head>
 
-        <!-------------- fontawesome stylesheet ---------------->
-        <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+  <body>
+    <header id="header">
+      <a href="../index.html">
+        <!-- Set your img src. -->
+        <img class="rounded-circle d-block mx-auto" 
+             src="" alt="My photo">
+        <div id="name">Your Name</div>
+        <div id="position">Your Position</div>
+      </a>
+    </header>
 
-        <!--------------- bootstrap stylesheet ----------------->
-        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    </head>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-items"
+              aria-expanded="false">
+        <span id="btn-collapse" class="fas fa-bars"></span>
+      </button>
+      <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/about-me.html">
+            <span>About me</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <span>Portfolio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/my-skills.html">
+            <span>My skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/cv.html">
+            <span>My CV</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/contact-me.html">
+            <span>Contact me</span>
+          </a>
+        </li>
+      </ul>
+      <div id="social-media-label">Find me on social media</div>
+      <ul id="social-media" class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fas fa-envelope fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-twitter fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-github fa-lg"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-    <body>
-        <header id="header">
-            <a href="../index.html">
-                <img class="rounded-circle d-block mx-auto" 
-                     src="../assets/images/my-foto.png"
-                     alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
-            </a>
-        </header>
+    <main id="main">
+      <span id="portfolio-icon" class="fas fa-book"></span>
+      <h1>Portfolio</h1>
+      <!--
+        * Set your project tile as data-project-title attribute.
+        * Set your project technologies as data-technologies
+          attribute in format:
+            "technology1 technology2~name~with~space technology3"
+        * Set your project url as data-project-url attribute.
+        * Set your project images url as data-project-images-url attribute
+          (default images location is "/assets/images/").
+        * Set your img src as data-project-images attribute in format:
+            "image1-title:img1-name image2-title:img2-name"
+      -->
+      <ul id="projects-list">
+        <li data-project-title="Project 1"
+            data-technologies="HTML5 CSS3 Bootstrap~4 JQuery"
+            data-project-url=""
+            data-project-images-url="../assets/images"
+            data-project-images="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt 
+          in culpa qui officia deserunt mollit anim id est laborum.
+        </li>
+        <li data-project-title="Project 2"
+            data-technologies="Java Spring React"
+            data-project-url=""
+            data-project-images-url="../assets/images"
+            data-project-images="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt 
+          in culpa qui officia deserunt mollit anim id est laborum.
+        </li>
+        <li data-project-title="Project 3"
+            data-technologies="C++ CMake Linux"
+            data-project-url=""
+            data-project-images-url="../assets/images"
+            data-project-images="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt 
+          in culpa qui officia deserunt mollit anim id est laborum.
+        </li>
+      </ul>
+    </main>
 
-        <nav id="nav" class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-items" aria-expanded="false">
-                <span id="btn-collapse" class="fas fa-bars"></span>
-            </button>
-            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
-                <li class="nav-item"><a class="nav-link" href="../html/about-me.html"><span>About me</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><span>Portfolio</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/my-skills.html"><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/cv.html"><span>My CV</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../html/contact-me.html"><span>Contact me</span></a></li>
-            </ul>
-            <div id="social-media-label">Find me on social media</div>
-            <ul id="social-media" class="nav">
-                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
-            </ul>
-        </nav>
+    <footer id="footer">
+        &copy; 2020 Damian Marciniak
+    </footer>
 
-        <main id="main">
-            <span id="portfolio-icon" class="fas fa-book"></span>
-            <h1>Portfolio</h1>
-            <ul id="projects-list">
-                <li
-                    data-project-title="Project 1"
-                    data-technologies="HTML5 CSS3 Bootstrap~4 JQuery"
-                    data-project-url="https://github.com"
-                    data-project-images-url="../assets/images"
-                    data-project-images="image1:img1.png image2:img2.png image3:img1.png">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                </li>
-                <li
-                    data-project-title="Project 2"
-                    data-technologies="Java Spring React"
-                    data-project-url="https://github.com"
-                    data-project-images-url="../assets/images"
-                    data-project-images="image2:img2.png">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                </li>
-                <li
-                    data-project-title="Project 3"
-                    data-technologies="C++ CMake Linux"
-                    data-project-url="https://github.com"
-                    data-project-images-url="../assets/images"
-                    data-project-images="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </ul>
-        </main>
+    <!--------------- template containers ----------------->
 
-        <footer id="footer" class="text-center">
-            &copy; 2020 Damian Marciniak
-        </footer>
-
-        <!--------------- template containers ----------------->
-
-        <section id="project-container-template"
-                 class="project-container" hidden>
-            <span class="item-circle"></span>
-            <div class="row">
-                <div class="col-sm-12 col-md-5">
-                    <h2 class="project-title"></h2>
-                    <div class="project-description"></div>
-                    <div class="technology-container"></div>
-                    <a class="project-url" href="" target="_blank">
-                        Link to project
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-7">
-                    <div class="slideshow-container">
-                        <a class="prev">&#10094;</a>
-                        <a class="next">&#10095;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="slideshow-container-template" class="slide" hidden>
-            <div class="image-number"></div>
-            <img src="#">
-            <div class="title"></div>
+    <section id="project-container-template" class="project-container" hidden>
+      <span class="item-circle"></span>
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <h2 class="project-title"></h2>
+          <div class="project-description"></div>
+          <div class="technology-container"></div>
+          <a class="project-url" href="#" target="_blank">
+              Link to project
+          </a>
         </div>
+        <div class="col-sm-12 col-md-7">
+          <div class="slides-container">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!------------------- jquery script ------------------->
-        <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <div id="slide-container-template" class="slide" hidden>
+      <div class="image-number"></div>
+      <img src="#">
+      <div class="title"></div>
+    </div>
 
-        <!----------------- bootstrap script ------------------>
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
-
-        <!------------------- own scripts --------------------->
-        <script src="../js/portfolio.js"></script>
-    </body>
+    <!------------------- jquery script ------------------->
+    <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!----------------- bootstrap script ------------------>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!------------------ custom scripts ------------------->
+    <script src="../js/portfolio.js"></script>
+  </body>
 </html>
-

@@ -1,86 +1,125 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, template, personal usage">
-        <meta name="description" content="This is a portfolio template for personal usage.
-                                          Change specific information about yourself
-                                          and boast about them in work!">
-        <meta name="author" content="Damian Marciniak">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, template, personal usage">
+    <meta name="description" content="This is a portfolio template
+                                      for personal usage.
+                                      Change specific information about yourself
+                                      and boast about them in work!">
+    <meta name="author" content="Damian Marciniak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Template</title>
+    <title>Portfolio Template</title>
 
-        <!----------------- own stylesheets -------------------->
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/index.css">
+    <!---------------- custom stylesheets ------------------>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-------------- fontawesome stylesheet ---------------->
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <!--------------- bootstrap stylesheet ----------------->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  </head>
 
-        <!-------------- fontawesome stylesheet ---------------->
-        <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+  <body>
+    <header id="header">
+      <a href="#">
+        <!-- put your img src -->
+        <img class="rounded-circle d-block mx-auto" 
+             src="" alt="My photo">
+        <div id="name">
+          Your Name
+        </div>
+        <div id="position">
+          Your Position
+        </div>
+      </a>
+    </header>
 
-        <!--------------- bootstrap stylesheet ----------------->
-        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
-    </head>
-
-    <body>
-        <header id="header">
-            <a href="#">
-                <img class="rounded-circle d-block mx-auto" 
-                     src="./assets/images/my-foto.png"
-                     alt="My photo">
-                <div id="name" class="text-center text-uppercase">Your Name</div>
-                <div id="position" class="text-center text-uppercase">Your Position</div>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-items"
+              aria-expanded="false">
+        <span id="btn-collapse" class="fas fa-bars"></span>
+      </button>
+      <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
+        <li class="nav-item">
+          <a class="nav-link" href="./html/about-me.html">
+            <span>About me</span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./html/portfolio.html">
+                <span>Portfolio</span>
             </a>
-        </header>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/my-skills.html">
+            <span>My skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/cv.html">
+            <span>My CV</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/contact-me.html">
+            <span>Contact me</span>
+          </a>
+        </li>
+      </ul>
+      <div id="social-media-label">Find me on social media</div>
+      <ul id="social-media" class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fas fa-envelope fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-facebook-f fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-twitter fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-linkedin-in fa-lg"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="fab fa-github fa-lg"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-        <nav id="nav" class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-items" aria-expanded="false">
-                <span id="btn-collapse" class="fas fa-bars"></span>
-            </button>
-            <ul id="nav-items" class="navbar-nav collapse navbar-collapse">
-                <li class="nav-item"><a class="nav-link" href="./html/about-me.html"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/portfolio.html"><span>Portfolio</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/my-skills.html"><span>My skills</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/cv.html"><span>My CV</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/contact-me.html"><span>Contact me</span></a></li>
-            </ul>
-            <div id="social-media-label">Find me on social media</div>
-            <ul id="social-media" class="nav">
-                <li class="nav-item"><a class="nav-link" href=""><span class="fas fa-envelope fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-facebook-f fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-twitter fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-linkedin-in fa-lg"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><span class="fab fa-github fa-lg"></span></a></li>
-            </ul>
-        </nav>
+    <main id="main">
+      <section>
+        <h1>Hello, I'm [Your Name],</h1>
+        <div>
+          junior software developer<br>specialized in
+          <strong>Java</strong> and <strong>C++.</strong>
+        </div>
+        <div>Welcome on my site!</div>
+        <a href="html/about-me.html">Click here to find out more about me.</a>
+        <a href="html/portfolio.html">Click here to view my portfolio.</a>
+        <a href="html/cv.html">Click here to view my CV.</a>
+      </section>
+    </main>
 
-        <main id="main">
-            <section>
-                <h1>Hello, I'm [Your Name],</h1>
-                <div>
-                    junior software developer<br>specialized in
-                    <strong>Java</strong> and <strong>C++.</strong>
-                </div>
-                <div>Welcome on my site!</div>
-                <a class="text-uppercase" href="html/about-me.html">
-                    Click here to find out more about me.
-                </a>
-                <a class="text-uppercase" href="html/portfolio.html">
-                    Click here to view my portfolio.
-                </a>
-                <a class="text-uppercase" href="html/cv.html">
-                    Click here to view my CV.
-                </a>
-            </section>
-        </main>
+    <footer id="footer">
+      &copy; 2020 Damian Marciniak
+    </footer>
 
-        <footer id="footer" class="text-center">&copy; 2020 Damian Marciniak</footer>
-
-        <!------------------- jquery script ------------------->
-        <script src="./js/jquery/jquery-3.5.1.slim.min.js"></script>
-
-        <!----------------- bootstrap script ------------------>
-        <script src="./js/bootstrap/bootstrap.min.js"></script>
-    </body>
+    <!------------------- jquery script ------------------->
+    <script src="./js/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!----------------- bootstrap script ------------------>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>

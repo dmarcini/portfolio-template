@@ -12,11 +12,11 @@ sections:
 
 ## Screenshots
 
-![](README-images/about-me.PNG)
-![](README-images/portfolio.PNG)
-![](README-images/my-skills.PNG)
-![](README-images/cv.PNG)
-![](README-images/contact-me.PNG)
+![](assets/images/README/about-me.PNG)
+![](assets/images/README/portfolio.PNG)
+![](assets/images/README/my-skills.PNG)
+![](assets/images/README/cv.PNG)
+![](assets/images/README/contact-me.PNG)
 
 ---
 

@@ -1,100 +1,102 @@
 #main {
-    background: #ffffff;
-    height: 100%;
-    margin: 0;
-    padding: 50px 0 50px 80px;
-    color: var(--primary-dark-color);
-    overflow: scroll;
+  background: var(--secondary-color);
+  height: 100%;
+  margin: 0;
+  padding: 50px 50px 50px 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-h2 {
-    color: var(--primary-light-color);
+#my-skills-icon, #main h1 {
+  color: var(--primary-dark-color);
+  font-size: 2em;
 }
 
-.skill-circle-container {
-    position: relative;
+#main h1 {
+  padding: 0 0 20px 30px;
 }
 
-.skill-circle {
-    display: inline-block;
-    background-color: var(--primary-light-color);
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--primary-dark-color);
-    border-radius: 50%;
-    margin-right: 6px;
-    opacity: 1;
+#main h1 {
+  display: inline-block;
+  text-transform: uppercase; 
 }
 
-#skill-level-description {
-    color: var(--primary-light-color);
-    font-size: 0.875em;
-    text-transform: uppercase;
-}
-
-.light-skill-circle {
-    background-color: var(--primary-light-color);
-}
-
-.dark-skill-circle {
-    background-color: #ffffff;
-}
-
-#skill-header {
-    position: relative;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-
-#skill-header span {
-    font-size: 2em;
-    position: absolute;
-    top: 6px;
-    left: -20px;
-}
-
-#skill-header h1 {
-    display: inline;
-    padding-left: 50px;
-    font-size: 2em;
+#main h2 {
+  color: var(--primary-light-color);
 }
 
 #skills-list {
-    list-style-type: none;
-    border-left: 1px solid var(--primary-dark-color);
-    padding: 0;
+  list-style-type: none;
+  border-left: 1px solid var(--primary-dark-color);
+  padding: 0;
+  margin-left: 20px;
 }
 
 #skills-list li {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
+  color: var(--primary-light-color);
 }
 
 #skills-list li:first-child {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 #skills-list li:last-child {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .item-circle {
-    background-color: var(--primary-dark-color);
-    position: absolute;
-    left: -5px;
-    top: 8px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  background-color: var(--primary-dark-color);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
 }
 
 .item-circle + h2 {
-    display: inline-block;
-    font-size: 1.25em;
-    padding-left: 50px;
+  display: inline-block;
+  font-size: 1.25em;
+  padding-left: 50px;
+}
+
+.skill-circle-container {
+  position: relative;
+}
+
+.skill-circle {
+  display: inline-block;
+  background-color: var(--primary-light-color);
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border: 1px solid var(--primary-dark-color);
+  border-radius: 50%;
+}
+
+#skill-level-description {
+  color: var(--primary-light-color);
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
+.light-skill-circle {
+  background-color: var(--primary-light-color);
+}
+
+.dark-skill-circle {
+  background-color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 768px) {
-    .skill-circle-container {
-        margin-left: 50px;
-    }
+  .skill-circle-container {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #main {
+    overflow: hidden;
+  }
 }
